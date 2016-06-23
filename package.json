@@ -5,5 +5,23 @@
   "dependencies": {
     "ffi": "^2.0.0",
     "mustache": "^2.2.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zetsingithub/node-ffi-gen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zetsingithub/node-ffi-gen/issues"
+  },
+  "homepage": "https://github.com/zetsingithub/node-ffi-gen#readme",
+  "description": ""
 }
