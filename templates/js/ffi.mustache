@@ -1,0 +1,27 @@
+var FFI = require('ffi')
+var ArrayType = require('ref-array')
+var Struct = require('ref-struct')
+var Union = require('ref-union');
+var ref = require('ref')
+
+{{#includes}}
+var {{name}} = require('./{{value}}')
+{{/includes}}
+
+{{#enums}}
+var {{name}} = exports.{{name}} = {
+	{{#value}}
+	{{name}}: {{value}},
+	{{/value}}
+}
+{{/enums}}
+
+{{#types}}
+{{&.}}
+{{/types}}
+
+FFI.Library(__dirname + '{{&library}}', {
+	{{#functions}}
+	{{name}}: [ {{result}}, [ {{#args}}{{.}}, {{/args}}] ],
+	{{/functions}}
+}, exports)

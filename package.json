@@ -1,0 +1,9 @@
+{
+  "name": "ffi-gen",
+  "version": "0.1.0",
+  "main": "index.js",
+  "dependencies": {
+    "ffi": "^2.0.0",
+    "mustache": "^2.2.1"
+  }
+}
