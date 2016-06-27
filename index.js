@@ -66,11 +66,3 @@ module.exports = function(opts) {
 		fs.writeFileSync(out, gen)
 	}
 }
-
-// test here
-// module.exports({
-// 	lib: '/SDL2',
-// 	dir: __dirname + '/test/SDL2'
-// 	// args: ['-I/Users/zetsin/Downloads/cfe-3.8.0.src/include/'],
-// 	// dir: '/Users/zetsin/Downloads/cfe-3.8.0.src/include/clang-c'
-// })
