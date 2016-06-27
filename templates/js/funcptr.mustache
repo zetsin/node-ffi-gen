@@ -1,1 +1,1 @@
-var {{name}} = FFI.Function( {{value.result}}, [ {{#value.args}}{{.}}, {{/value.args}}] )
+var {{name}} = exports.{{name}} = FFI.Function( {{value.result}}, [ {{#value.args}}{{.}}, {{/value.args}}] )
