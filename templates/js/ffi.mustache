@@ -20,7 +20,7 @@ var {{name}} = exports.{{name}} = {
 {{&.}}
 {{/types}}
 
-FFI.Library(__dirname + '{{&library}}', {
+FFI.Library({{&library}}, {
 	{{#functions}}
 	{{name}}: [ {{result}}, [ {{#args}}{{.}}, {{/args}}] ],
 	{{/functions}}

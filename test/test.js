@@ -1,8 +1,8 @@
 var ffigen = require('../index')
 
 ffigen({
-	lib: '/libclang',
-	args: ['-I/Users/zetsin/work/node-libclang-bootstrap/lib/include/'],
-	dir: '/Users/zetsin/work/node-libclang-bootstrap/lib/include/clang-c/',
-	out: '/Users/zetsin/work/node-libclang-bootstrap/lib/'
+	lib: 'test',
+	args: [],
+	dir: '/Users/zetsin/work/node-ffi-gen/test',
+	out: '/Users/zetsin/work/node-ffi-gen/test'
 })
